@@ -1,0 +1,140 @@
+.character {
+	position: absolute;
+	margin: 0 auto;
+	width: 238px;
+	height: 220px;
+	bottom: 3px;
+	right: 700px;
+	transform: scaleX(-1);
+}
+.character .body {
+	background-image: url(images/Body/00002000.png);
+	background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.character .body, .character .belowBody, .character .robe {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 0px;
+}
+.character .body .head, .character .belowBody .belowhead, .character .robe .cap {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 29px;
+	right: -2px;
+}
+.character .head .hair, .character .belowBody .belowhead .belowHair {
+	position: absolute;
+	width: 50px;
+	height: 60px;
+	bottom: -12px;
+	right: 0px;
+}
+.character .belowBody .belowhead .belowHair {
+	background-image: url(images/Hair2/default.hairBelowBody.png);
+	background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    top: 10px;
+	right: -2px;
+}
+.character .head {
+	background-image: url(images/Head/00012000.png);
+	background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.character .arm {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 11px;
+	right: -11px;
+	background-image: url(images/Arm/stand1.0.arm.png);
+	background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.character .head .face {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 1px;
+	right: 3px;
+	background-image: url(images/Face/cheers.0.face.png);
+	background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.character .head .hair {
+	background-image: url(images/Hair2/default.hairOverHead.png);
+	background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.character .robe .coat {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 2px;
+	right: -2px;
+	background-image: url(images/Coat/stand1.0.mail.png);
+	background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.character .robe .coatArm {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 17px;
+	right: -11px;
+	background-image: url(images/Coat/stand1.0.mailArm.png);
+	background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.character .robe .cap {
+	position: absolute;
+	width: 100px;
+	bottom: 49px;
+	right: -31px;
+	background-image: url(images/Cap/default.default.png);
+	background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.character .robe .weapon {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 4px;
+	right: -10px;
+	background-image: url(images/Weapon/30.stand1.0.weapon.png);
+	background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.character .robe .weaponEffect {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	bottom: 14px;
+	right: -88px;
+	background-image: url(images/Weapon/30.stand1.0.effect.png);
+	background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.map {
+	position: relative;
+	width: 900px;
+	height: 512px;
+	background-image: url(images/Map/back.0.png);
+	background-size: initial;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}

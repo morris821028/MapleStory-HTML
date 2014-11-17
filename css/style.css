@@ -1,0 +1,102 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: url(http://bgimages.kontraband.com/media/images/bg_body.jpg) top left no-repeat;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0 auto;
+	width: 960px;
+}
+a
+{
+	color: #000000;
+	text-shadow: 1px 1px 1px #cccccc;
+}
+p
+{
+	text-align: justify;
+}
+header, footer, aside, section
+{
+	display: block;
+}
+h1
+{
+	font-size: 26px;
+	line-height: 40px;
+	padding: 18px 0;
+}
+nav
+{
+	background: #f3f3f3;
+	border: 1px solid #cccccc;
+	height: 40px;
+	moz-border-radius: 10px;
+	position: absolute;
+	webkit-border-radius: 10px;
+	width: 920px;
+}
+nav ul
+{
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0 auto;
+}
+nav ul li
+{
+	float: left;
+}
+nav ul li a
+{
+	display: block;
+	line-height: 40px;
+	margin-right: 20px;
+}
+#content
+{
+	display: table;
+	margin-top: 40px;
+}
+#mcontent
+{
+	display: table-cell;
+	padding-right: 22px;
+	width: 620px;
+}
+aside
+{
+	background: #f3f3f3;
+	display: table-cell;
+	width: 300px;
+}
+.bpage div
+{
+	moz-column-count: 2;
+	moz-column-gap: 22px;
+	webkit-column-count: 2;
+	webkit-coulmn-gap: 22px;
+}
+aside section
+{
+	background: #e0e0e0;
+	margin: 22px 0 0 22px;
+	moz-border-radius: 11px;
+	padding: 11px 22px;
+	webkit-border-radius: 11px;
+	width: 50%;
+}
+footer
+{
+	background: #666666;
+	border-top: 1px solid #cccccc;
+	color: #ffffff;
+	moz-border-radius-topleft: 5px;
+	moz-border-radius-topright: 5px;
+	height: 30px;
+	width: 920px;
+	text-align: center;
+}
