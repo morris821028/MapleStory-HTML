@@ -1,10 +1,15 @@
-.character {
+.control {
 	position: absolute;
 	margin: 0 auto;
 	width: 238px;
 	height: 220px;
 	bottom: 3px;
-	right: 700px;
+}
+.character {
+	position: absolute;
+	margin: 0 auto;
+	width: 238px;
+	height: 220px;
 	transform: scaleX(-1);
 }
 .character .body {
@@ -13,13 +18,14 @@
     background-repeat: no-repeat;
     background-position: center bottom;
 }
-.character .body, .character .belowBody, .character .robe {
+.character .body, .character .belowBody, .character .robe, .character .vbody {
 	position: absolute;
 	width: 50px;
 	height: 50px;
 	bottom: 0px;
+	right: 0px;
 }
-.character .body .head, .character .belowBody .belowhead, .character .robe .cap {
+.character .vbody .head, .character .belowBody .belowhead, .character .robe .cap {
 	position: absolute;
 	width: 50px;
 	height: 50px;
