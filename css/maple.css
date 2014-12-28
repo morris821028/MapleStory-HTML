@@ -174,8 +174,8 @@
 	right: 80px;
 	top: 200px;
    	background-image: url(images/Map/start.png);
-	-webkit-animation: startEff 1.8s steps(8) infinite;
-   	-moz-animation: startEff 1.8s steps(8) infinite;
+	-webkit-animation: startEff 2.0s steps(8) infinite;
+   	-moz-animation: startEff 2.0s steps(8) infinite;
 }
 @-webkit-keyframes startEff {
     from { background-position: left bottom; }

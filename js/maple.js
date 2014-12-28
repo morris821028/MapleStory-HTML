@@ -55,8 +55,8 @@ $(function() {
           $("#mapfooter").after('<div class="startEff0"></div>');
           setTimeout(function() { 
               $(".startEff0").remove();
-          }, 1800);
-      }, 1000);
+          }, 2000);
+      }, 1500);
       Game._onEachFrame(Game.run);
     };
     
@@ -383,6 +383,7 @@ $(function() {
       	this.main.find('.character').css({transform: 'scaleX(1)', right: '200px'});
       	this.faceDir = 0;
       }
+      this.validPos();
     };
 
     Player.prototype.moveRight = function() {
@@ -394,6 +395,7 @@ $(function() {
       	this.main.find('.character').css({transform: 'scaleX(-1)', right: '0px'});
       	this.faceDir = 1;
       }
+      this.validPos();
     };
 
     Player.prototype.moveUp = function() {
@@ -403,7 +405,9 @@ $(function() {
     Player.prototype.moveDown = function() {
       // this.y -= 2;
     };
-
+    Player.prototype.validPos = function() {
+        this.x = Math.min(Math.max(-650, this.x), 190);
+    }
     Player.prototype.jump = function() {
     	if (this.moveState == 'normal') {
     		this.moveState = 'jumping';
@@ -419,6 +423,7 @@ $(function() {
     		}
     		this.jumptime++;
    		}      
+      this.validPos();
     };
     
     Player.prototype.update = function() {
