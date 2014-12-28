@@ -10,6 +10,7 @@ $(function() {
       Digit2: 50,
       Digit3: 51,
       X: 88,
+      BACKSPACE: 32,
 
       isDown: function(keyCode) {
         return this._pressed[keyCode];
@@ -50,7 +51,12 @@ $(function() {
     
     Game.start = function() {
       Game.player = new Player('nico');
-
+      setTimeout(function() { 
+          $("#mapfooter").after('<div class="startEff0"></div>');
+          setTimeout(function() { 
+              $(".startEff0").remove();
+          }, 1800);
+      }, 1000);
       Game._onEachFrame(Game.run);
     };
     
@@ -423,7 +429,7 @@ $(function() {
       if (Key.isDown(Key.Digit1)) this.face.update('F1');
       if (Key.isDown(Key.Digit2)) this.face.update('F2');
       if (Key.isDown(Key.Digit3)) this.face.update('F3');
-      if (Key.isDown(Key.X) && this.moveState != 'jumping')	this.jump();
+      if (Key.isDown(Key.BACKSPACE) && this.moveState != 'jumping')	this.jump();
       if (Key.isDown(Key.LEFT) || Key.isDown(Key.RIGHT))
       		this.body.update('walk');
       if (!Key.isDown(Key.LEFT) && !Key.isDown(Key.RIGHT))

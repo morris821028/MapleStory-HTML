@@ -144,3 +144,44 @@
     background-repeat: no-repeat;
     background-position: center bottom;
 }
+.miniDportalEff0 {
+   	width: 130px;
+   	height: 161px;
+  	position: absolute;
+	margin: 0 auto;
+	right: 380px;
+	bottom: -3px;
+   	background-image: url(images/Map/door.png);
+	-webkit-animation: portalEff 1.8s steps(14) infinite;
+   	-moz-animation: portalEff 1.8s steps(14) infinite;
+    -ms-animation: portalEff 1.8s steps(14) infinite;
+     -o-animation: portalEff 1.8s steps(14) infinite;
+        animation: portalEff 1.8s steps(14) infinite;
+}
+@-webkit-keyframes portalEff {
+    from { background-position: left bottom; }
+    to { background-position: -1820px bottom; }
+}
+@-moz-keyframes portalEff {
+    from { background-position:0 0px; }
+    to { background-position: -1820px 0px; }
+}
+.startEff0 {
+   	width: 700px;
+   	height: 190px;
+  	position: absolute;
+	margin: 0 auto;
+	right: 80px;
+	top: 200px;
+   	background-image: url(images/Map/start.png);
+	-webkit-animation: startEff 1.8s steps(8) infinite;
+   	-moz-animation: startEff 1.8s steps(8) infinite;
+}
+@-webkit-keyframes startEff {
+    from { background-position: left bottom; }
+    to { background-position: -5600px bottom; }
+}
+@-moz-keyframes startEff {
+    from { background-position:0 0px; }
+    to { background-position: -5600px 0px; }
+}
